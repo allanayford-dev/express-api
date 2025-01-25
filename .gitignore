@@ -1,0 +1,20 @@
+# Node.js dependencies
+node_modules/
+
+# Application-specific data
+data/
+
+# Logs and temporary test files
+*.log
+tests/
+
+# Environment variables
+.env
+
+# Ignore specific IDE/editor configs (optional)
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
