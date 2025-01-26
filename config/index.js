@@ -4,10 +4,9 @@ const PORT = process.env.PORT ?? 3000
 const HOST = process.env.HOST ?? 'localhost'
 const NODE_ENV = process.env.NODE_ENV ?? 'development'
 
-const ACCESS_TOKEN_SECRET =
-	process.env.ACCESS_TOKEN_SECRET ?? 'AccessTokenSecret'
+const ACCESS_TOKEN_SECRET = process.env.JWT_SECRET
 const REFRESH_TOKEN_SECRET =
-	process.env.REFRESH_TOKEN_SECRET ?? 'RefreshTokenSecret'
+	process.env.JWT_REFRESH_SECRET ?? 'RefreshTokenSecret'
 
 const DB_URL = process.env.DB_URL ?? 'mongodb://localhost:27017'
 

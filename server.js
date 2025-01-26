@@ -1,4 +1,6 @@
 const express = require('express')
+const cookieParser = require('cookie-parser')
+const multer = require('multer')
 const path = require('path')
 const cors = require('cors')
 const morgan = require('morgan')
@@ -8,7 +10,7 @@ const { PORT, NODE_ENV, HOST } = require('./config')
 const corsOptions = require('./config/cors')
 const cspConfig = require('./config/content-security-policy')
 const dbConnect = require('./config/db')
-const startCronJobs = require('./utils')
+// const startCronJobs = require('./cron')
 
 const app = express()
 
@@ -16,6 +18,7 @@ const app = express()
 app.use(helmet())
 app.use(helmet.contentSecurityPolicy(cspConfig))
 app.use(cors(corsOptions))
+app.use(cookieParser())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
@@ -24,7 +27,7 @@ if (NODE_ENV === 'development') {
 }
 
 // Start cron jobs
-startCronJobs() // Assuming this starts the cron jobs when the server starts
+// startCronJobs() // Assuming this starts the cron jobs when the server starts
 
 // Root route
 app.get('/', (req, res) => {
