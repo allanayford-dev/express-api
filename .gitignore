@@ -7,6 +7,7 @@ data/
 # Logs and temporary test files
 *.log
 tests/
+uploads/
 
 # Environment variables
 .env
