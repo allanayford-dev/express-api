@@ -14,8 +14,6 @@ const dbConnect = require('./config/db')
 
 const app = express()
 
-console.log({ corsOptions })
-
 // Middleware
 app.use(helmet())
 app.use(helmet.contentSecurityPolicy(cspConfig))
