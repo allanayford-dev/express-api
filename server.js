@@ -14,6 +14,8 @@ const dbConnect = require('./config/db')
 
 const app = express()
 
+console.log({ corsOptions })
+
 // Middleware
 app.use(helmet())
 app.use(helmet.contentSecurityPolicy(cspConfig))
@@ -23,7 +25,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 if (NODE_ENV === 'development') {
-	app.use(morgan('dev'))
+	app.use(morgan('short'))
 }
 
 // Start cron jobs

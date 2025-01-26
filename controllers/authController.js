@@ -59,14 +59,16 @@ const login = async (req, res) => {
 		res.cookie('token', token, {
 			httpOnly: true,
 			secure: process.env.NODE_ENV === 'production',
+			sameSite: 'Lax',
 			maxAge: 3600000,
 		})
 		res.cookie('refreshToken', refreshToken, {
 			httpOnly: true,
 			secure: process.env.NODE_ENV === 'production',
+			sameSite: 'Lax',
 			maxAge: 604800000,
 		})
-
+		console.log('Set-Cookie Headers:', res.getHeaders()['set-cookie'])
 		const { password: _, ...userWithoutPassword } = user.toObject()
 		res
 			.status(200)
@@ -103,6 +105,7 @@ const refreshToken = async (req, res) => {
 			res.cookie('token', newToken, {
 				httpOnly: true,
 				secure: process.env.NODE_ENV === 'production',
+				sameSite: 'Lax',
 				maxAge: 3600000,
 			})
 

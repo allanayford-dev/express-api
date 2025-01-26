@@ -1,0 +1,409 @@
+Value Date,Value Time,Type,Description,Beneficiary or Cardholder,Amount
+2025-01-24,18:02:37,EFT,SALARY,,"21,842.79"
+2025-01-24,16:47:46,Transfer,T,To: 15656756397,(312.14)
+2025-01-24,16:45:49,PayShap payment,A AYFORD,,312.14
+2025-01-24,11:46:08,Transfer,T,To: 15656756397,(150.00)
+2025-01-23,10:44:30,Transfer,T,To: 15656756397,(150.00)
+2025-01-23,08:54:39,Transfer,T,To: 15656756397,(100.00)
+2025-01-22,14:58:56,Transfer,Transfer,To: 15656756397,(100.00)
+2025-01-22,12:42:46,Transfer,T,To: 15656756397,(50.00)
+2025-01-21,12:22:20,Transfer,T,To: 15656756397,(150.00)
+2025-01-20,07:23:03,Transfer,T,To: 15656756397,(169.00)
+2025-01-17,15:27:07,Transfer,T,To: 15656756397,(200.00)
+2025-01-17,15:18:42,Transfer,T,To: 15656756397,(300.00)
+2025-01-16,14:51:44,Prepaid airtime,Airtime,My MTN - 0789856514,(30.00)
+2025-01-16,14:51:44,Prepaid airtime,Airtime,My MTN - 0789856514,(1.00)
+2025-01-16,06:56:16,Transfer,T,To: 15656756397,(200.00)
+2025-01-15,07:57:29,Transfer,T,To: 15656756397,(200.00)
+2025-01-13,11:51:10,Transfer,Transfer,To: 15656756397,(200.00)
+2025-01-13,07:35:01,Transfer,T,To: 15656756397,(200.00)
+2025-01-12,10:52:13,Transfer,Transfer,To: 15656756397,(250.00)
+2025-01-11,20:16:12,Transfer,T,To: 15656756397,(200.00)
+2025-01-10,15:25:20,Transfer,T,To: 15656756397,(200.00)
+2025-01-08,11:05:39,Transfer,Transfer,To: 15656756397,(150.00)
+2025-01-07,13:08:35,Transfer,Transfer,To: 15656756397,(200.00)
+2025-01-06,17:19:23,Transfer,Transfer,To: 15656756397,(169.00)
+2025-01-06,09:57:28,Prepaid airtime,Airtime,My MTN - 0789856514,(1.00)
+2025-01-06,09:57:28,Prepaid airtime,Airtime,My MTN - 0789856514,(30.00)
+2025-01-06,09:34:41,Transfer,Transfer,To: 15656756397,(200.00)
+2025-01-03,13:43:20,Transfer,Coffee,To: 15656756397,(200.00)
+2025-01-03,07:34:14,Transfer,Tr,To: 15656756397,(254.27)
+2025-01-02,22:16:50,Fee,Debit Order fee,,(3.75)
+2025-01-02,22:16:50,Debit order,DISC INVT 1186766992-310957705,,"(1,400.00)"
+2025-01-02,22:01:05,Fee,Debit Order fee,,(3.75)
+2025-01-02,22:01:05,Debit order,DISCLIFE  5131718706-309910913,,(938.23)
+2025-01-02,17:52:51,Transfer,Transfer,To: 15656756397,"(2,000.00)"
+2025-01-01,10:25:05,Transfer,Transfer,To: 15656756397,"(1,000.00)"
+2024-12-31,16:21:31,Transfer,Transfer,To: 15656756397,(300.00)
+2024-12-30,19:23:35,Transfer,Transfer,To: 15656756397,(300.00)
+2024-12-30,09:15:59,Transfer,Transfer,To: 15656756397,(500.00)
+2024-12-28,18:21:21,Transfer,Transfer,To: 15656756397,(270.00)
+2024-12-28,09:54:15,Prepaid airtime,Airtime,My MTN - 0789856514,(30.00)
+2024-12-28,09:51:17,Transfer,Transfer,To: 15656756397,(234.80)
+2024-12-27,23:50:26,Interest,Dynamic interest boost at 0.15%,,0.95
+2024-12-27,23:45:51,Interest,Interest Earned at 5.25%,,33.35
+2024-12-27,17:15:13,Transfer,T,To: 15656756397,(154.00)
+2024-12-27,11:38:00,Transfer,Transfer,To: 15656756397,(700.00)
+2024-12-27,01:11:34,Fee,Payment fee,,(2.75)
+2024-12-27,01:11:34,Fee,Payment fee,,(2.75)
+2024-12-27,01:11:34,Scheduled EFT,DSTV,DSTV Subscriptions,(640.00)
+2024-12-27,01:11:34,Scheduled EFT,Allan Ayford,Nedbank Personal Loan,"(1,500.00)"
+2024-12-24,16:38:46,Transfer,Transfer,To: 15656756397,(324.29)
+2024-12-24,16:38:07,Transfer,Transfer,To: 15656756397,(400.00)
+2024-12-24,08:42:36,Transfer,Transfer,To: 15656756397,(400.00)
+2024-12-24,08:39:22,Fee,PayShap payment fee,,(5.00)
+2024-12-24,08:39:22,PayShap payment,Transfer,,(300.00)
+2024-12-23,17:58:25,Transfer,Transfer,To: 15656756397,(200.00)
+2024-12-23,12:35:26,Fee,PayShap payment fee,Anton Ayford,(13.50)
+2024-12-23,12:35:26,PayShap payment,Anton Ayford,Anton Ayford,"(2,700.00)"
+2024-12-23,12:30:32,Transfer,Transfer,From: 15656756397,"1,800.00"
+2024-12-21,22:34:50,Transfer,Transfer,To: 15656756397,(300.00)
+2024-12-21,11:50:37,Transfer,Transfer,To: 15656756397,"(5,000.00)"
+2024-12-20,18:05:02,Transfer,Salary,From: 15656756397,"21,842.79"
+2024-12-20,18:04:03,Transfer,Transfer,To: 15656756397,(400.00)
+2024-12-20,16:48:53,Transfer,Transfer,To: 15656756397,(50.00)
+2024-12-20,14:37:12,Transfer,Transfer,To: 15656756397,(150.00)
+2024-12-18,11:34:17,Transfer,Transfer,To: 15656756397,(150.00)
+2024-12-17,12:45:49,Transfer,Transfer,To: 15656756397,(100.00)
+2024-12-13,18:54:08,Transfer,Transfer,To: 15656756397,(150.00)
+2024-12-13,15:06:24,Transfer,Transfer,To: 15656756397,(299.00)
+2024-12-13,09:59:25,Fee,PayShap payment fee,Softsure Savings,(1.00)
+2024-12-13,09:59:25,PayShap payment,Softsure Savings - Capitec,Softsure Savings,(100.00)
+2024-12-12,13:25:44,Transfer,Transfer,To: 15656756397,(100.00)
+2024-12-12,13:24:09,Transfer,Transfer,To: 15656756397,(120.00)
+2024-12-12,06:44:59,Fee,PayShap payment fee,Nico Masseur,(5.00)
+2024-12-12,06:44:59,PayShap payment,Nico Masseur,Nico Masseur,(400.00)
+2024-12-12,06:40:27,Fee,PayShap payment fee,,(5.00)
+2024-12-12,06:40:27,PayShap payment,Chris Ayford,,(700.00)
+2024-12-12,06:38:32,Prepaid airtime,Airtime,Other number - 0639823805,(270.00)
+2024-12-11,11:14:43,Transfer,Transfer,To: 15656756397,(35.00)
+2024-12-11,06:33:22,Fee,PayShap payment fee,,(5.00)
+2024-12-11,06:33:22,PayShap payment,Transfer,,(560.00)
+2024-12-10,12:25:59,Transfer,Transfer,To: 15656756397,(200.00)
+2024-12-10,07:13:56,Transfer,Transfer,To: 15656756397,(200.00)
+2024-12-08,11:12:14,Transfer,Transfer,To: 15656756397,(500.00)
+2024-12-07,18:57:50,Transfer,Transfer,To: 15656756397,(200.00)
+2024-12-06,19:57:46,Transfer,Transfer,To: 15656756397,(300.00)
+2024-12-06,19:57:18,Transfer,Transfer,To: 15656756397,(350.00)
+2024-12-06,07:29:13,Transfer,Transfer,To: 15656756397,(250.00)
+2024-12-05,14:57:51,Transfer,TRANSFER,To: 15656756397,(200.00)
+2024-12-04,13:38:52,Transfer,Transfer,To: 15656756397,(400.00)
+2024-12-04,13:07:40,Transfer,Transfer,To: 15656756397,(234.27)
+2024-12-02,22:06:18,Fee,Debit Order fee,,(3.75)
+2024-12-02,22:06:18,Debit order,DISC INVT 1186766992-309200516,,"(1,400.00)"
+2024-12-02,22:00:34,Fee,Debit Order fee,,(3.75)
+2024-12-02,22:00:34,Debit order,DISCLIFE  5131718706-308231430,,(898.23)
+2024-12-02,17:58:32,Fee,PayShap payment fee,Capital,(5.00)
+2024-12-02,17:58:32,PayShap payment,Capital Investment,Capital,(200.00)
+2024-12-02,15:32:06,Fee,PayShap payment fee,South Cape Wireless,(5.00)
+2024-12-02,15:32:06,PayShap payment,SC Wireless - Upgrade,South Cape Wireless,(250.00)
+2024-12-02,13:07:54,Transfer,Transfer,To: 15656756397,(500.00)
+2024-12-01,19:38:14,Transfer,Transfer,To: 15656756397,(594.00)
+2024-12-01,10:55:38,Transfer,Transfer,To: 15656756397,"(1,300.00)"
+2024-11-30,09:35:04,Fee,PayShap payment fee,,(6.00)
+2024-11-30,09:35:04,PayShap payment,Transfer,,"(1,200.00)"
+2024-11-30,07:17:29,Transfer,Debit Orders,To: 15656756397,(900.00)
+2024-11-29,16:41:23,Transfer,Transfer,To: 15656756397,(300.00)
+2024-11-29,15:14:33,Transfer,Transfer,To: 15656756397,(167.43)
+2024-11-29,07:20:19,Transfer,Transfer,To: 15656756397,(300.00)
+2024-11-29,07:19:55,Transfer,Transfer,To: 15656756397,(300.00)
+2024-11-28,13:50:02,Transfer,Transfer,To: 15656756397,(150.00)
+2024-11-27,23:55:54,Interest,Dynamic interest boost at 0.15%,,0.50
+2024-11-27,23:51:45,Interest,Interest Earned at 5.25%-5.50%,,17.93
+2024-11-27,01:13:30,Fee,Payment fee,,(2.75)
+2024-11-27,01:13:30,Fee,Payment fee,,(2.75)
+2024-11-27,01:13:30,Fee,Payment fee,,(2.75)
+2024-11-27,01:13:30,Fee,Payment fee,,(2.75)
+2024-11-27,01:13:30,Scheduled EFT,DSTV,DSTV Subscriptions,(640.00)
+2024-11-27,01:13:30,Scheduled EFT,Christina Ayford,Christina Ayford,"(1,750.00)"
+2024-11-27,01:13:30,Scheduled EFT,Anton Ayford,Anton Ayford,"(2,700.00)"
+2024-11-27,01:13:30,Scheduled EFT,Allan Ayford,Nedbank Personal Loan,"(1,500.00)"
+2024-11-25,16:31:12,Transfer,Transfer,From: 15656756397,"21,500.00"
+2024-11-24,13:59:27,Transfer,Transfer,To: 13736474012,(150.37)
+2024-11-22,11:37:55,Transfer,Transfer,To: 15656756397,(250.00)
+2024-11-21,15:21:43,Transfer,Transfer,To: 15656756397,(100.00)
+2024-11-20,11:13:07,Transfer,Transfer,To: 15656756397,(200.00)
+2024-11-17,01:04:58,Scheduled transfer,Weekly Transfer,To: 15656756397,(800.00)
+2024-11-15,17:18:48,Transfer,Transfer,To: 15656756397,(150.00)
+2024-11-15,16:51:23,Transfer,Transfer,To: 15656756397,(250.00)
+2024-11-15,13:15:01,Transfer,Transfer,From: 13736474012,"1,500.00"
+2024-11-15,13:13:35,Transfer,Transfer,To: 15656756397,(150.00)
+2024-11-15,06:28:53,Fee,PayShap payment fee,Allan Spens,(5.00)
+2024-11-15,06:28:53,PayShap payment,Weekly Spend,Allan Spens,(200.00)
+2024-11-14,12:56:25,Transfer,Transfer,To: 15656756397,(200.00)
+2024-11-13,17:20:33,Transfer,Transfer,To: 15656756397,(300.00)
+2024-11-12,14:42:03,Transfer,Transfer,To: 15656756397,(300.00)
+2024-11-12,14:39:46,Transfer,Transfer,To: 15656756397,(500.00)
+2024-11-11,19:03:04,Transfer,Transfer,To: 15656756397,(350.00)
+2024-11-11,06:42:02,Prepaid airtime,Airtime,Other number - 0639823805,(270.00)
+2024-11-10,01:50:51,Scheduled transfer,Weekly Transfer,To: 15656756397,(800.00)
+2024-11-08,08:48:55,Fee,PayShap payment fee,South Cape Wireless,(5.00)
+2024-11-08,08:48:55,PayShap payment,SC Wireless - Upgrade,South Cape Wireless,(710.00)
+2024-11-07,15:25:45,Transfer,Transfer,To: 15656756397,(200.00)
+2024-11-06,16:53:07,Transfer,Car Parts,To: 15656756397,"(3,300.00)"
+2024-11-06,07:21:16,Transfer,Transfer,To: 15656756397,(250.00)
+2024-11-06,06:16:23,EFT,Real-time payment Anton Ayford,,"3,340.00"
+2024-11-03,02:03:33,Scheduled transfer,Weekly Transfer,To: 15656756397,(800.00)
+2024-11-02,08:04:05,Transfer,Transfer,From: 13736474012,"4,000.00"
+2024-11-01,22:18:04,Fee,Debit Order fee,,(3.75)
+2024-11-01,22:18:04,Debit order,DISC INVT 1186766992-307485067,,"(1,400.00)"
+2024-11-01,22:04:14,Fee,Debit Order fee,,(3.75)
+2024-11-01,22:04:14,Debit order,DISCLIFE  5131718706-306424875,,(898.23)
+2024-11-01,17:40:23,Transfer,Transfer,To: 15656756397,(350.00)
+2024-11-01,13:34:19,Transfer,Transfer,To: 15656756397,(500.00)
+2024-10-31,19:07:41,Transfer,Transfer,To: 15656756397,(500.00)
+2024-10-30,07:35:17,Transfer,Transfer,To: 15656756397,"(1,000.00)"
+2024-10-28,13:26:06,Prepaid airtime,Airtime,My MTN - 0789856514,(50.00)
+2024-10-27,03:42:47,Fee,Payment fee,,(2.75)
+2024-10-27,03:42:47,Fee,Payment fee,,(2.75)
+2024-10-27,03:42:47,Fee,Payment fee,,(2.75)
+2024-10-27,03:42:47,Fee,Payment fee,,(2.75)
+2024-10-27,03:42:47,Fee,Payment fee,,(2.75)
+2024-10-27,03:42:47,Fee,Payment fee,,(2.75)
+2024-10-27,03:42:47,Scheduled EFT,DSTV,DSTV Subscriptions,(640.00)
+2024-10-27,03:42:47,Scheduled EFT,Christina Ayford,Christina Ayford,"(1,750.00)"
+2024-10-27,03:42:47,Scheduled EFT,Anton Ayford,Anton Ayford,"(2,000.00)"
+2024-10-27,03:42:47,Scheduled EFT,Capital Investment,Capital,(700.00)
+2024-10-27,03:42:47,Scheduled EFT,Allan Ayford,Nedbank Personal Loan,"(1,500.00)"
+2024-10-27,03:42:47,Scheduled EFT,Capitec Holdings,Allan Spens,"(1,900.00)"
+2024-10-27,03:42:47,Scheduled transfer,Weekly Payment,To: 11289912068,"(1,200.00)"
+2024-10-27,03:42:47,Scheduled transfer,Tax Free Investment,To: 13736474012,"(3,000.00)"
+2024-10-27,03:42:47,Scheduled transfer,Weekly Transfer,To: 15656756397,"(1,200.00)"
+2024-10-27,00:33:44,Interest,Dynamic interest boost at 0.15%,,0.33
+2024-10-27,00:28:58,Interest,Interest Earned at 5.50%,,12.27
+2024-10-26,08:45:49,Transfer,Transfer,From: 15656756397,"20,000.00"
+2024-10-25,07:17:02,Transfer,Transfer,To: 15656756397,(100.00)
+2024-10-24,17:12:55,Transfer,Transfer,To: 15656756397,(100.00)
+2024-10-24,16:23:38,Transfer,Transfer,To: 15656756397,(50.00)
+2024-10-23,07:19:41,Transfer,Transfer,From: 15656756397,250.00
+2024-10-22,12:37:32,Transfer,Transfer,To: 15656756397,(250.00)
+2024-10-21,11:56:26,Transfer,Transfer,To: 15656756397,(100.00)
+2024-10-21,07:44:26,Transfer,Transfer,To: 15656756397,(150.00)
+2024-10-19,17:47:16,Transfer,Transfer,To: 15656756397,(250.00)
+2024-10-18,16:04:25,Transfer,Transfer,To: 15656756397,(150.00)
+2024-10-18,02:32:02,Transfer,Transfer,To: 15656756397,(100.00)
+2024-10-17,11:54:25,Transfer,Transfer,To: 15656756397,(350.00)
+2024-10-15,20:08:19,Transfer,Transfer,To: 15656756397,(200.00)
+2024-10-15,12:42:54,Transfer,Transfer,From: 13736474012,"1,000.00"
+2024-10-14,17:29:50,Transfer,Transfer,To: 15656756397,(200.00)
+2024-10-13,18:14:10,Transfer,Transfer,To: 15656756397,(250.00)
+2024-10-11,13:17:22,Transfer,Transfer,To: 15656756397,(380.00)
+2024-10-11,10:20:47,Prepaid airtime,Airtime,Other number - 0639823805,(270.00)
+2024-10-10,15:09:31,Transfer,Transfer,To: 15656756397,(150.00)
+2024-10-09,09:37:26,Transfer,Transfer,To: 15656756397,(200.00)
+2024-10-08,08:36:36,Transfer,Transfer,To: 15656756397,(350.00)
+2024-10-07,13:02:27,Transfer,Transfer,To: 15656756397,(150.00)
+2024-10-05,11:48:50,Transfer,Transfer,To: 15656756397,(500.00)
+2024-10-03,19:51:18,Transfer,Transfer,To: 15656756397,(805.60)
+2024-10-02,12:20:32,Transfer,Transfer,From: 13736474012,"1,500.00"
+2024-10-02,12:13:15,Transfer,Transfer,To: 15656756397,(200.00)
+2024-10-02,12:09:13,Transfer,Transfer,To: 15656756397,(500.00)
+2024-10-01,22:15:48,Fee,Debit Order fee,,(3.75)
+2024-10-01,22:15:48,Debit order,DISC INVT 1186766992-305702997,,"(1,400.00)"
+2024-10-01,22:03:59,Fee,Debit Order fee,,(3.75)
+2024-10-01,22:03:59,Debit order,DISCLIFE  5131718706-304726933,,(898.23)
+2024-09-30,02:03:16,Scheduled transfer,Debits,To: 15656756397,"(1,500.00)"
+2024-09-28,12:20:24,Transfer,Transfer,To: 15656756397,(700.00)
+2024-09-27,05:43:14,Scheduled transfer,Weekly Transfer,To: 15656756397,"(1,200.00)"
+2024-09-27,01:52:41,Fee,Payment fee,,(2.75)
+2024-09-27,01:52:41,Scheduled EFT,Kayle,Kayle Ayford,(450.00)
+2024-09-27,01:52:40,Fee,Payment fee,,(2.75)
+2024-09-27,01:52:40,Fee,Payment fee,,(2.75)
+2024-09-27,01:52:40,Fee,Payment fee,,(2.75)
+2024-09-27,01:52:40,Fee,Payment fee,,(2.75)
+2024-09-27,01:52:40,Fee,Payment fee,,(2.75)
+2024-09-27,01:52:40,Fee,Payment fee,,(2.75)
+2024-09-27,01:52:40,Scheduled EFT,DSTV,DSTV Subscriptions,(640.00)
+2024-09-27,01:52:40,Scheduled EFT,Anton Ayford,Anton Ayford,"(2,000.00)"
+2024-09-27,01:52:40,Scheduled EFT,Capital Investment,Capital,(700.00)
+2024-09-27,01:52:40,Scheduled EFT,Allan Ayford,Nedbank Personal Loan,"(1,500.00)"
+2024-09-27,01:52:40,Scheduled EFT,Christina Ayford,Christina Ayford,"(1,750.00)"
+2024-09-27,01:52:40,Scheduled EFT,Capitec Holdings,Allan Spens,"(1,900.00)"
+2024-09-27,01:52:40,Scheduled transfer,Weekly Payment,To: 11289912068,"(1,200.00)"
+2024-09-27,01:52:40,Scheduled transfer,Tax Free Investment,To: 13736474012,"(3,000.00)"
+2024-09-27,00:37:30,Interest,Dynamic interest boost at 0.15%,,0.71
+2024-09-27,00:32:21,Interest,Interest Earned at 5.50%-5.75%,,27.08
+2024-09-26,04:31:59,Transfer,Salary,From: 15656756397,"21,842.79"
+2024-09-23,19:52:37,Transfer,Transfer,To: 15656756397,(100.00)
+2024-09-23,07:20:28,Transfer,Transfer,To: 15656756397,(150.00)
+2024-09-21,15:05:25,Transfer,Transfer,To: 15656756397,(100.00)
+2024-09-21,12:34:11,Transfer,Transfer,To: 15656756397,(150.00)
+2024-09-20,16:52:08,Transfer,Transfer,To: 15656756397,(250.00)
+2024-09-20,15:45:04,Transfer,Transfer,To: 15656756397,(300.00)
+2024-09-19,17:41:17,Transfer,Transfer,To: 15656756397,(200.00)
+2024-09-18,09:23:12,Transfer,Transfer,To: 15656756397,(250.00)
+2024-09-17,02:26:33,Transfer,Transfer,To: 15656756397,(230.25)
+2024-09-16,21:39:08,Prepaid airtime,Airtime,Other number - 0639823805,(270.00)
+2024-09-15,06:59:48,Transfer,Transfer,To: 15656756397,(200.00)
+2024-09-14,19:00:05,Transfer,Transfer,To: 15656756397,(300.00)
+2024-09-14,17:18:36,Transfer,Transfer,To: 15656756397,(500.00)
+2024-09-10,17:18:59,Transfer,Transfer,To: 15656756397,(500.00)
+2024-09-08,09:07:27,Transfer,Transfer,To: 15656756397,(200.00)
+2024-09-07,15:48:47,Transfer,Transfer,To: 15656756397,(467.00)
+2024-09-07,12:59:27,Fee,Payment fee,DSTV Subscriptions,(2.75)
+2024-09-07,12:59:27,EFT,DSTV,DSTV Subscriptions,(330.00)
+2024-09-06,17:06:06,Transfer,Transfer,To: 15656756397,(280.00)
+2024-09-06,08:21:05,Transfer,Transfer,To: 15656756397,(500.00)
+2024-09-05,15:40:37,Fee,PayShap payment fee,South Cape Wireless,(5.00)
+2024-09-05,15:40:37,PayShap payment,SC Wireless - Upgrade,South Cape Wireless,(360.00)
+2024-09-02,13:34:41,Fee,PayShap payment fee,Capital,(5.00)
+2024-09-02,13:34:41,PayShap payment,Capital Investment,Capital,(600.00)
+2024-09-02,07:34:26,Scheduled transfer,Tax Free Investment,To: 13736474012,"(3,000.00)"
+2024-09-01,17:15:54,Transfer,Transfer,To: 15656756397,(750.00)
+2024-09-01,06:54:32,Transfer,Transfer,To: 15656756397,(358.74)
+2024-09-01,04:55:15,Fee,Payment fee,,(2.75)
+2024-09-01,04:55:15,Scheduled EFT,DSTV,DSTV Subscriptions,(640.00)
+2024-08-31,11:06:48,Fee,PayShap payment fee,Transportation,(6.02)
+2024-08-31,11:06:48,PayShap payment,Weekly Funds,Transportation,"(1,203.35)"
+2024-08-31,11:05:20,Fee,PayShap payment fee,Anton Ayford,(10.00)
+2024-08-31,11:05:20,PayShap payment,Anton Ayford,Anton Ayford,"(2,000.00)"
+2024-08-31,02:22:10,Scheduled transfer,Monthly Debt Payment,To: 11289912068,(807.86)
+2024-08-30,20:30:29,Transfer,Transfer,To: 15656756397,"(1,000.00)"
+2024-08-30,13:00:37,Fee,PayShap payment fee,Nedbank Personal Loan,(7.50)
+2024-08-30,13:00:37,PayShap payment,Allan Ayford,Nedbank Personal Loan,"(1,500.00)"
+2024-08-30,12:56:12,Transfer,Transfer,To: 15656756397,"(1,000.00)"
+2024-08-27,01:45:37,Fee,Payment fee,,(2.75)
+2024-08-27,01:45:37,Scheduled EFT,Anton Ayford,Anton Ayford,"(1,750.00)"
+2024-08-27,01:45:36,Fee,Payment fee,,(2.75)
+2024-08-27,01:45:36,Scheduled EFT,Christina Ayford,Christina Ayford,"(1,750.00)"
+2024-08-27,00:27:13,Interest,Dynamic interest boost at 0.08%,,0.63
+2024-08-27,00:22:05,Interest,Interest Earned at 5.75%,,48.59
+2024-08-26,10:54:33,Transfer,Move to savings,From: 15656756397,"18,000.00"
+2024-08-23,15:20:16,Fee,PayShap payment fee,Allan Spens,(7.50)
+2024-08-23,15:20:16,PayShap payment,Weekly Spend,Allan Spens,"(1,500.00)"
+2024-08-20,19:36:42,Transfer,Transfer,To: 15656756397,(230.00)
+2024-08-20,06:20:57,Prepaid airtime,Airtime,Other number - 0639823805,(270.00)
+2024-08-18,14:47:38,Transfer,Transfer,To: 15656756397,(845.00)
+2024-08-16,17:13:45,Fee,PayShap payment fee,Allan Spens,(5.00)
+2024-08-16,17:13:45,PayShap payment,Weekly Spend,Allan Spens,(300.00)
+2024-08-16,07:19:31,Transfer,Transfer,To: 15656756397,(350.00)
+2024-08-12,14:22:51,Transfer,Transfer,To: 15656756397,(500.00)
+2024-08-10,13:25:58,Transfer,Transfer,To: 15656756397,(222.25)
+2024-08-10,13:17:42,Transfer,Transfer,To: 15656756397,(200.00)
+2024-08-08,17:57:44,Transfer,Transfer,To: 15656756397,(300.00)
+2024-08-08,10:19:34,Fee,Payment fee,DSTV Subscriptions,(2.75)
+2024-08-08,10:19:34,EFT,DSTV,DSTV Subscriptions,(575.00)
+2024-08-07,18:23:10,Transfer,Transfer,To: 15656756397,(200.00)
+2024-08-07,14:41:55,Transfer,Transfer,To: 15656756397,(500.00)
+2024-08-07,07:31:15,Transfer,Transfer,To: 15656756397,(195.00)
+2024-08-06,18:20:05,Transfer,Transfer,To: 15656756397,(250.00)
+2024-08-06,15:29:38,Fee,PayShap payment fee,,(5.00)
+2024-08-06,15:29:38,PayShap payment,Softsure Soft Landings,,(150.00)
+2024-08-06,07:18:43,Transfer,Transfer,To: 15656756397,(200.00)
+2024-08-05,11:19:43,Transfer,Transfer,To: 15656756397,(395.00)
+2024-08-03,18:41:33,Fee,PayShap payment fee,Allan Spens,(5.00)
+2024-08-03,18:41:33,PayShap payment,Weekly Spend,Allan Spens,(400.00)
+2024-08-03,15:41:36,Transfer,Transfer,To: 15656756397,(400.00)
+2024-08-03,11:00:48,Transfer,Transfer,To: 15656756397,(600.00)
+2024-08-03,10:18:01,Transfer,Transfer,To: 15656756397,(400.00)
+2024-08-03,09:46:28,Transfer,Transfer,To: 15656756397,(400.00)
+2024-08-02,18:39:20,Transfer,Transfer,To: 15656756397,(375.03)
+2024-08-01,17:17:19,Transfer,Transfer,To: 15656756397,(700.00)
+2024-08-01,02:56:42,Fee,Payment fee,,(2.75)
+2024-08-01,02:56:42,Scheduled EFT,DSTV,DSTV Subscriptions,(640.00)
+2024-07-31,01:41:07,Scheduled transfer,Transfer,To: 15656756397,"(3,500.00)"
+2024-07-27,00:15:17,Interest,Dynamic interest boost at 0.08%,,0.23
+2024-07-27,00:10:20,Interest,Interest Earned at 5.75%,,17.55
+2024-07-26,07:15:21,Transfer,Transfer,From: 15656756397,"18,000.00"
+2024-07-24,07:30:50,EFT,Transfer to EasyEquities...3373,,(480.00)
+2024-07-24,07:29:46,Transfer,Transfer,To: 15656756397,(250.00)
+2024-07-23,05:50:03,Prepaid airtime,Airtime,Other number - 0639823805,(270.00)
+2024-07-20,15:40:18,Transfer,Transfer,To: 15656756397,(400.00)
+2024-07-18,15:50:16,Transfer,Transfer,To: 15656756397,(380.00)
+2024-07-15,13:36:59,Transfer,Transfer,To: 15656756397,(350.00)
+2024-07-12,18:01:05,Transfer,Test,To: 15656756397,(150.00)
+2024-07-09,19:28:49,Transfer,Alphine Inn,To: 15656756397,(620.00)
+2024-07-09,13:42:13,Transfer,Transfer,To: 15656756397,(500.00)
+2024-07-06,15:13:04,Transfer,Transfer,To: 15656756397,(499.98)
+2024-07-01,09:46:28,Fee,PayShap payment fee,,(5.00)
+2024-07-01,09:46:28,PayShap payment,My Business,,(500.00)
+2024-06-29,12:19:30,Transfer,Transfer,To: 15656756397,"(1,000.00)"
+2024-06-28,15:27:12,Transfer,Transfer,To: 15656756397,"(1,000.00)"
+2024-06-27,05:08:08,Transfer,Life and Retirement,To: 15656756397,"(3,000.00)"
+2024-06-27,00:13:57,Interest,Dynamic interest boost at 0.08%,,0.06
+2024-06-27,00:10:04,Interest,Interest Earned at 5.75%,,4.92
+2024-06-26,05:58:19,Transfer,Transfer,From: 15656756397,"10,000.00"
+2024-06-24,06:17:23,Transfer,Transfer,To: 15656756397,(150.00)
+2024-06-22,21:43:07,Prepaid airtime,Airtime,My MTN - 0789856514,(50.00)
+2024-06-19,09:56:39,Transfer,Test,To: 15656756397,(90.00)
+2024-06-18,05:58:40,Fee,PayShap payment fee,Allan Spens,(5.00)
+2024-06-18,05:58:40,PayShap payment,Weekly Spend,Allan Spens,(200.00)
+2024-06-14,16:01:57,Fee,PayShap payment fee,Allan Spens,(5.00)
+2024-06-14,16:01:57,PayShap payment,Weekly Spend,Allan Spens,(500.00)
+2024-06-10,06:55:40,Transfer,Spend,To: 15656756397,(402.79)
+2024-05-31,05:58:56,Transfer,Retirement fund,From: 15656756397,"1,400.00"
+2024-05-27,00:05:16,Interest,Interest Earned at 5.75%,,0.01
+2024-04-27,01:03:20,Interest,Interest Earned at 5.75%,,0.01
+2024-03-27,00:00:00,Interest,Interest Earned at 5.75%,,0.01
+2024-02-27,00:00:00,Interest,Interest Earned at 5.75%,,0.01
+2024-01-27,00:00:00,Interest,Interest Earned at 5.75%,,0.01
+2023-12-27,00:00:00,Interest,Interest Earned at 5.75%,,0.01
+2023-11-27,00:00:00,Interest,Interest Earned at 5.75%,,0.01
+2023-10-27,00:00:00,Interest,Interest Earned at 5.75%,,0.01
+2023-09-27,00:00:00,Interest,Interest Earned at 5.75%,,0.01
+2023-08-27,00:00:00,Interest,Interest Earned at 5.75%,,0.01
+2023-07-27,00:00:00,Interest,Interest Earned at 5.75%,,0.01
+2023-06-27,23:47:48,Interest,Interest Earned at 5.10%-5.75%,,0.01
+2023-05-27,23:45:58,Interest,Interest Earned at 5.10%,,0.01
+2023-04-27,23:43:14,Interest,Interest Earned at 4.75%-5.10%,,0.01
+2023-03-27,23:48:08,Interest,Interest Earned at 4.75%,,0.01
+2023-02-27,23:51:32,Interest,Interest Earned at 4.50%-4.75%,,0.01
+2023-01-27,23:48:16,Interest,Interest Earned at 4.50%,,0.01
+2022-12-27,23:45:20,Interest,Interest Earned at 4.00%-4.50%,,0.01
+2022-11-27,23:43:04,Interest,Interest Earned at 4.00%,,0.01
+2022-10-27,23:41:44,Interest,Interest Earned at 3.75%-4.00%,,0.01
+2022-09-27,23:40:27,Interest,Interest Earned at 3.75%,,0.01
+2022-08-27,23:41:02,Interest,Interest Earned at 3.00%-3.75%,,0.01
+2022-07-27,23:40:18,Interest,Interest Earned at 3.00%,,0.01
+2022-06-27,23:41:55,Interest,Interest Earned at 3.00%,,0.01
+2022-05-27,23:43:52,Interest,Interest Earned at 3.00%,,0.01
+2022-04-27,23:45:11,Interest,Interest Earned at 2.90%-3.00%,,0.01
+2022-03-27,23:46:55,Interest,Interest Earned at 2.90%,,0.01
+2022-02-27,23:44:19,Interest,Interest Earned at 2.75%-2.90%,,0.01
+2022-01-27,23:47:15,Interest,Interest Earned at 2.75%,,0.01
+2021-12-27,23:41:48,Interest,Interest Earned at 2.75%,,0.01
+2021-11-27,23:37:08,Interest,Interest Earned at 2.75%,,0.01
+2021-10-27,23:38:23,Interest,Interest Earned at 2.75%,,0.01
+2021-09-27,23:34:29,Interest,Interest Earned at 2.75%,,0.01
+2021-08-27,23:31:49,Interest,"Interest Earned at 2,75%",,0.01
+2021-07-27,23:31:22,Interest,Interest Earned,,0.01
+2021-06-28,00:11:02,Interest,Interest Earned,,0.01
+2021-05-27,23:31:06,Interest,Interest Earned,,0.01
+2021-04-27,23:28:56,Interest,Interest Earned,,0.01
+2021-03-27,23:36:43,Interest,Interest Earned,,0.01
+2021-02-27,23:31:14,Interest,Interest Earned,,0.01
+2021-01-27,23:30:57,Interest,Interest Earned,,0.01
+2020-12-27,23:26:24,Interest,Interest Earned,,0.01
+2020-11-27,23:24:51,Interest,Interest Earned,,0.01
+2020-10-27,23:31:30,Interest,Interest Earned,,0.01
+2020-09-27,23:34:12,Interest,Interest Earned,,0.01
+2020-08-27,23:38:33,Interest,Interest Earned,,0.01
+2020-07-27,23:35:28,Interest,Dynamic interest boost at 0.25%,,0.01
+2020-07-27,23:32:47,Interest,Interest Earned,,0.20
+2020-06-28,14:11:52,Transfer,Transfer,To: 11289912068,(280.00)
+2020-06-28,13:24:32,Transfer,Transfer,To: 11289912068,(120.00)
+2020-06-28,12:16:07,Transfer,Transfer,To: 11289912068,(150.00)
+2020-06-28,12:06:53,Transfer,Transfer,To: 11289912068,(450.00)
+2020-06-28,11:13:58,Transfer,Transfer,To: 11289912068,"(1,000.00)"
+2020-06-27,23:55:43,Interest,Dynamic interest boost at 0.25%,,0.06
+2020-06-27,23:53:06,Interest,Interest Earned,,0.90
+2020-06-26,16:01:15,Transfer,Transfer,To: 11289912068,"(2,000.00)"
+2020-06-26,05:10:34,EFT,Real-time payment Savings,,"2,000.00"
+2020-06-26,05:10:29,EFT,Real-time payment Transfer,,"2,000.00"
+2020-06-19,17:27:04,Real-time payment,Real-time payment Esmond Adonis,Esmond Adonis,(600.00)
+2020-06-19,07:23:51,Transfer,Transfer,To: 11289912068,(40.00)
+2020-06-19,06:02:43,EFT,Real-time payment Capitec Transfer,,168.55
+2020-06-12,16:49:41,Transfer,Transfer,To: 11289912068,(200.00)
+2020-06-12,16:25:37,EFT,Real-time payment Savings,,131.31
+2020-06-12,16:12:15,Miles to cash,Miles transfer to cash,,541.30
+2020-06-12,07:29:57,Transfer,Transfer,To: 11289912068,(80.00)
+2020-06-11,17:15:12,EFT,Real-time payment Savings,,80.00
+2020-06-10,10:21:38,Transfer,Transfer,To: 11289912068,(150.00)
+2020-06-10,04:44:09,EFT,Real-time payment Savings,,150.00
+2020-06-08,19:43:09,Transfer,Transfer,To: 11289912068,(100.00)
+2020-06-08,07:36:19,Transfer,Transfer,To: 11289912068,(100.00)
+2020-06-05,07:39:08,Transfer,Transfer,To: 11289912068,(100.00)
+2020-06-04,13:54:24,Transfer,Transfer,To: 11289912068,(100.00)
+2020-06-02,16:09:54,Transfer,Transfer,To: 11289912068,(100.00)
+2020-05-29,08:14:14,EFT,Real-time payment Savings,,200.00
+2020-05-28,17:58:38,EFT,Real-time payment Savings,,300.00

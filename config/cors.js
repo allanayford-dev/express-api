@@ -1,21 +1,36 @@
 const { HOST, PORT, NODE_ENV } = require('./index')
 
-const allowedOrigins = [`http://${HOST}:${PORT}`, 'http://localhost:8963']
+const allowedOrigins = [
+	'http://localhost:3000',
+	'http://localhost:3001',
+	`http://${HOST}:${PORT}`,
+	'http://localhost:8963',
+	'http://127.0.0.1:3001',
+	'http://127.0.0.1:3000',
+]
 
 const corsOptions = {
-	origin: (origin, callback) => {
-		if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+	origin: function (origin, callback) {
+		if (!origin || allowedOrigins.includes(origin)) {
 			callback(null, true)
 		} else {
 			callback(new Error('Not allowed by CORS'), false)
 		}
 	},
+	credentials: true,
 	methods: ['GET', 'POST', 'PUT', 'DELETE'],
 	allowedHeaders: ['Content-Type', 'Authorization'],
 }
 
 const corsTesting = {
-	origin: '*',
+	origin: function (origin, callback) {
+		if (!origin || allowedOrigins.includes(origin)) {
+			callback(null, true)
+		} else {
+			callback(new Error('Not allowed by CORS'), false)
+		}
+	},
+	credentials: true,
 	methods: ['GET', 'POST', 'PUT', 'DELETE'],
 	allowedHeaders: ['Content-Type', 'Authorization'],
 }
