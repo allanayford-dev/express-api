@@ -1,6 +1,8 @@
 const db = require('../models')
 const { User } = db
 const bcrypt = require('bcryptjs')
+const sanitize = require('../utils/sanitize')
+const mongoose = require('mongoose')
 
 // Add a new user
 const addUser = async (req, res) => {
@@ -10,7 +12,8 @@ const addUser = async (req, res) => {
 			return res.status(400).json({ message: 'Missing required fields' })
 		}
 
-		const existingUser = await User.findOne({ email })
+		const existingUser = await User.findOne({ email: sanitize(email) })
+
 		if (existingUser) {
 			return res.status(400).json({ message: 'User already exists' })
 		}
@@ -29,11 +32,19 @@ const addUser = async (req, res) => {
 
 // Update a user
 const updateUser = async (req, res) => {
+	const allowedUpdates = ['name', 'email']
+	const sanitizedUpdates = {}
+
 	try {
 		const { userId } = req.params
-		const updates = req.body
 
-		const updatedUser = await User.findByIdAndUpdate(userId, updates, {
+		for (const key of Object.keys(req.body)) {
+			if (allowedUpdates.includes(key)) {
+				sanitizedUpdates[key] = sanitize(req.body[key])
+			}
+		}
+
+		const updatedUser = await User.findByIdAndUpdate(userId, sanitizedUpdates, {
 			new: true,
 		})
 		if (!updatedUser) return res.status(404).json({ message: 'User not found' })
@@ -50,6 +61,11 @@ const updateUser = async (req, res) => {
 const deleteUser = async (req, res) => {
 	try {
 		const { userId } = req.params
+
+		if (!mongoose.Types.ObjectId.isValid(userId)) {
+			return res.status(400).json({ message: 'Invalid user ID' })
+		}
+
 		const deletedUser = await User.findByIdAndDelete(userId)
 		if (!deletedUser) return res.status(404).json({ message: 'User not found' })
 
@@ -73,6 +89,11 @@ const getUsers = async (req, res) => {
 const getUser = async (req, res) => {
 	try {
 		const { userId } = req.params
+
+		if (!mongoose.Types.ObjectId.isValid(userId)) {
+			return res.status(400).json({ message: 'Invalid user ID' })
+		}
+
 		const user = await User.findById(userId).select('-password')
 		if (!user) return res.status(404).json({ message: 'User not found' })
 
