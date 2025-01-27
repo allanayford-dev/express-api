@@ -12,7 +12,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install --only=production
+RUN npm install --only=production --ignore-scripts
 
 # Copy only the required source files
 COPY src/ ./src/
