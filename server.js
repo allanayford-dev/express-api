@@ -11,6 +11,8 @@ const corsOptions = require('./src/config/cors')
 const cspConfig = require('./src/config/content-security-policy')
 const dbConnect = require('./src/config/db')
 
+const { startCron } = require('./src/cron')
+
 const app = express()
 
 // Middleware
@@ -48,6 +50,8 @@ app.use((err, req, res, next) => {
 		message: err.message || 'Internal Server Error',
 	})
 })
+
+startCron()
 
 // Start the server
 app.listen(PORT, () => {
