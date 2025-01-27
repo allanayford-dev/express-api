@@ -10,7 +10,6 @@ const { PORT, NODE_ENV, HOST } = require('./config')
 const corsOptions = require('./config/cors')
 const cspConfig = require('./config/content-security-policy')
 const dbConnect = require('./config/db')
-// const startCronJobs = require('./cron')
 
 const app = express()
 
@@ -26,8 +25,7 @@ if (NODE_ENV === 'development') {
 	app.use(morgan('short'))
 }
 
-// Start cron jobs
-// startCronJobs() // Assuming this starts the cron jobs when the server starts
+
 
 // Root route
 app.get('/', (req, res) => {
