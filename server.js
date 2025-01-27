@@ -6,10 +6,10 @@ const cors = require('cors')
 const morgan = require('morgan')
 const helmet = require('helmet')
 
-const { PORT, NODE_ENV, HOST } = require('./config')
-const corsOptions = require('./config/cors')
-const cspConfig = require('./config/content-security-policy')
-const dbConnect = require('./config/db')
+const { PORT, NODE_ENV, HOST } = require('./src/config')
+const corsOptions = require('./src/config/cors')
+const cspConfig = require('./src/config/content-security-policy')
+const dbConnect = require('./src/config/db')
 
 const app = express()
 
@@ -25,14 +25,12 @@ if (NODE_ENV === 'development') {
 	app.use(morgan('short'))
 }
 
-
-
 // Root route
 app.get('/', (req, res) => {
 	res.send({ message: `Welcome Home! Running in ${NODE_ENV} mode` })
 })
 
-app.use('/api', require('./routes'))
+app.use('/api', require('./src/routes'))
 
 // Database connection
 dbConnect()

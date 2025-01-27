@@ -4,9 +4,9 @@ const {
 	login,
 	refreshToken,
 	logout,
-} = require('../controllers/authController')
-const { authenticateUser } = require('../middleware/authMiddleware')
-const { verifyUser } = require('../controllers/userController')
+} = require('../src/controllers/authController')
+const { authenticateUser } = require('../src/middleware/authMiddleware')
+const { verifyUser } = require('../src/controllers/userController')
 
 const router = express.Router()
 

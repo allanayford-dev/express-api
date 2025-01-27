@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 const { DB_URL } = require('./index')
 
 async function dbConnect() {
-	const dbName = require('../package.json').name
+	const dbName = require('../../package.json').name
 	try {
 		await mongoose.connect(DB_URL, {
 			dbName: dbName,

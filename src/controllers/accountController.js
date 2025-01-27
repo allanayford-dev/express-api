@@ -1,5 +1,5 @@
 const db = require('../models')
-const sanitize = require('../utils/sanitize')
+const sanitize = require('../../utils/sanitize')
 const { Account } = db
 
 const addAccount = async (req, res) => {

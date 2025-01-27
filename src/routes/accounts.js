@@ -6,8 +6,8 @@ const {
 	setAccountInactive,
 	setAccountActive,
 	listAccounts,
-} = require('../controllers/accountController')
-const { authenticateUser } = require('../middleware/authMiddleware')
+} = require('../src/controllers/accountController')
+const { authenticateUser } = require('../src/middleware/authMiddleware')
 
 const router = express.Router()
 

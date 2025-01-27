@@ -3,7 +3,7 @@ const { User } = db
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { ACCESS_TOKEN_SECRET, REFRESH_TOKEN_SECRET } = require('../config')
-const sanitize = require('../utils/sanitize')
+const sanitize = require('../../utils/sanitize')
 const mongoose = require('mongoose')
 
 // User registration

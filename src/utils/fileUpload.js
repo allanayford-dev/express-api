@@ -1,6 +1,6 @@
 const fs = require('fs')
 const csv = require('csv-parser')
-const db = require('../models')
+const db = require('../src/models')
 
 const { Transaction, Account } = db
 
@@ -65,7 +65,9 @@ const parseDiscoverBankImport = async (filePath, userId, accountNumber) => {
 									}
 								)
 								updatedCount++
-								console.log(`🔄 Updated transaction: ${existingTransaction._id}`)
+								console.log(
+									`🔄 Updated transaction: ${existingTransaction._id}`
+								)
 							} else {
 								// ✅ Create a new transaction if not found
 								transactions.push(
