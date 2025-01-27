@@ -1,4 +1,5 @@
 const db = require('../models')
+const sanitize = require('../utils/sanitize')
 const { Account } = db
 
 const addAccount = async (req, res) => {
@@ -10,7 +11,10 @@ const addAccount = async (req, res) => {
 			return res.status(400).json({ message: 'Missing required fields' })
 		}
 
-		const existingAccount = await Account.findOne({ accountNumber, bankName })
+		const existingAccount = await Account.findOne({
+			accountNumber: sanitize(accountNumber),
+			bankName: sanitize(bankName),
+		})
 		if (existingAccount) {
 			return res.status(400).json({
 				message: 'Account with this number already exists for the bank',
@@ -49,18 +53,26 @@ const updateAccount = async (req, res) => {
 			return res.status(400).json({ message: 'Account name cannot be empty' })
 		}
 
-		const updatedAccount = await Account.findByIdAndUpdate(accountId, updates, {
-			new: true,
-		})
+		const allowedUpdates = ['accountName']
+		const sanitizedUpdates = {}
+		for (const key of Object.keys(req.body)) {
+			if (allowedUpdates.includes(key)) {
+				sanitizedUpdates[key] = sanitize(req.body[key])
+			}
+		}
+
+		const updatedAccount = await Account.findByIdAndUpdate(
+			accountId,
+			sanitizedUpdates,
+			{ new: true }
+		)
 		if (!updatedAccount)
 			return res.status(404).json({ message: 'Account not found' })
 
-		res
-			.status(200)
-			.json({
-				message: 'Account updated successfully',
-				account: updatedAccount,
-			})
+		res.status(200).json({
+			message: 'Account updated successfully',
+			account: updatedAccount,
+		})
 	} catch (error) {
 		res
 			.status(500)
@@ -68,11 +80,12 @@ const updateAccount = async (req, res) => {
 	}
 }
 
-
 const deleteAccount = async (req, res) => {
 	try {
 		const { accountId } = req.params
-		const deletedAccount = await Account.findByIdAndDelete(accountId)
+		const sanitizedAccountId = sanitize(accountId)
+		const deletedAccount = await Account.findByIdAndDelete(sanitizedAccountId)
+
 		if (!deletedAccount)
 			return res.status(404).json({ message: 'Account not found' })
 
@@ -87,9 +100,10 @@ const deleteAccount = async (req, res) => {
 const setAccountInactive = async (req, res) => {
 	try {
 		const { accountId } = req.params
+		const sanitizedAccountId = sanitize(accountId)
 		const updatedAccount = await Account.findByIdAndUpdate(
-			accountId,
-			{ isActive: false },
+			sanitizedAccountId,
+			{ isActive: true },
 			{ new: true }
 		)
 		if (!updatedAccount)
