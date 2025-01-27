@@ -1,11 +1,11 @@
 const express = require('express')
-const { authenticateUser } = require('../src/middleware/authMiddleware')
-const uploadMiddleware = require('../src/middleware/uploadMiddleware')
+const { authenticateUser } = require('../middleware/authMiddleware')
+const uploadMiddleware = require('../middleware/uploadMiddleware')
 const {
 	generateReport,
 	uploadTransactions,
 	listTransactions,
-} = require('../src/controllers/transactionController')
+} = require('../controllers/transactionController')
 
 const router = express.Router()
 

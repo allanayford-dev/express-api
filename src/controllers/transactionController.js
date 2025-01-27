@@ -1,7 +1,7 @@
 const db = require('../models')
-const { parseDiscoverBankImport } = require('../../utils/fileUpload')
-const { getDateRange } = require('../../utils/dateUtils')
-const sanitize = require('../../utils/sanitize')
+const { parseDiscoverBankImport } = require('../utils/fileUpload')
+const { getDateRange } = require('../utils/dateUtils')
+const sanitize = require('../utils/sanitize')
 const { Account, Transaction } = db
 
 const uploadTransactions = async (req, res) => {

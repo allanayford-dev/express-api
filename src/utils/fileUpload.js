@@ -1,6 +1,6 @@
 const fs = require('fs')
 const csv = require('csv-parser')
-const db = require('../src/models')
+const db = require('../models')
 
 const { Transaction, Account } = db
 
