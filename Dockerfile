@@ -1,6 +1,10 @@
 # Use an official Node.js image
 FROM node:18
 
+# Create and switch to a non-root user
+RUN useradd --create-home --shell /bin/bash appuser
+USER appuser
+
 # Set working directory
 WORKDIR /app
 
@@ -8,7 +12,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm install --only=production
 
 # Copy only the required source files
 COPY src/ ./src/
