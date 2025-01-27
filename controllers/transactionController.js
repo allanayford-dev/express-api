@@ -1,12 +1,11 @@
 const db = require('../models')
 const { parseDiscoverBankImport } = require('../utils/fileUpload')
 const { getDateRange } = require('../utils/dateUtils')
+const sanitize = require('../utils/sanitize')
 const { Account, Transaction } = db
 
 const uploadTransactions = async (req, res) => {
 	try {
-
-
 		const { bankName, accountNumber } = req.body
 		if (!req.file) {
 			return res.status(400).json({ message: 'Missing file upload' })
@@ -18,7 +17,9 @@ const uploadTransactions = async (req, res) => {
 			return res.status(400).json({ message: 'Account number is required' })
 		}
 
-		const account = await Account.findOne({ accountNumber })
+		const account = await Account.findOne({
+			accountNumber: sanitize(accountNumber),
+		})
 		if (!account) {
 			return res.status(404).json({ message: 'Account not found' })
 		}
@@ -61,8 +62,12 @@ const generateReport = async (req, res) => {
 
 		const { startDate, endDate } = getDateRange(period)
 
+		if (isNaN(new Date(startDate)) || isNaN(new Date(endDate))) {
+			return res.status(400).json({ message: 'Invalid date range' })
+		}
+
 		const transactions = await Transaction.find({
-			date: { $gte: startDate, $lte: endDate },
+			date: { $gte: new Date(startDate), $lte: new Date(endDate) },
 		})
 
 		const report = transactions.reduce((acc, transaction) => {
@@ -81,7 +86,7 @@ const generateReport = async (req, res) => {
 
 const listTransactions = async (req, res) => {
 	try {
-		const transactions = await Transaction.find()
+		const transactions = await Transaction.find({ user: req.user.userId })
 		res.status(200).json({ transactions })
 	} catch (error) {
 		res.status(500).json({ message: 'Error retrieving transactions', error })
