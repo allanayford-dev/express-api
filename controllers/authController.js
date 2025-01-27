@@ -3,6 +3,8 @@ const { User } = db
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { ACCESS_TOKEN_SECRET, REFRESH_TOKEN_SECRET } = require('../config')
+const sanitize = require('../utils/sanitize')
+const mongoose = require('mongoose')
 
 // User registration
 const register = async (req, res) => {
@@ -12,7 +14,7 @@ const register = async (req, res) => {
 			return res.status(400).json({ message: 'Missing required fields' })
 		}
 
-		const existingUser = await User.findOne({ email })
+		const existingUser = await User.findOne({ email: sanitize(email) })
 		if (existingUser) {
 			return res.status(400).json({ message: 'User already exists' })
 		}
@@ -39,7 +41,7 @@ const login = async (req, res) => {
 			return res.status(400).json({ message: 'Missing required fields' })
 		}
 
-		const user = await User.findOne({ email })
+		const user = await User.findOne({ email: sanitize(email) })
 		if (!user) {
 			return res.status(400).json({ message: 'Invalid credentials' })
 		}
@@ -47,6 +49,10 @@ const login = async (req, res) => {
 		const isMatch = await bcrypt.compare(password, user.password)
 		if (!isMatch) {
 			return res.status(400).json({ message: 'Invalid credentials' })
+		}
+
+		if (!mongoose.Types.ObjectId.isValid(user._id)) {
+			return res.status(400).json({ message: 'Invalid user ID' })
 		}
 
 		const token = jwt.sign({ userId: user._id }, ACCESS_TOKEN_SECRET, {
@@ -89,10 +95,8 @@ const refreshToken = async (req, res) => {
 		const { refreshToken } = req.cookies
 
 		jwt.verify(refreshToken, REFRESH_TOKEN_SECRET, (err, decoded) => {
-			if (err) {
-				return res
-					.status(403)
-					.json({ message: 'Forbidden: Invalid refresh token' })
+			if (err || !mongoose.Types.ObjectId.isValid(decoded.userId)) {
+				return res.status(403).json({ message: 'Invalid refresh token' })
 			}
 
 			res.clearCookie('refreshToken')
