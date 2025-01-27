@@ -28,23 +28,36 @@ const storage = multer.diskStorage({
 })
 
 // ✅ Initialize Multer and Pass It Correctly
-const upload = multer({ storage })
+const upload = multer({
+	storage,
+	limits: {
+		fileSize: 5 * 1024 * 1024, // 5MB file size limit
+	},
+})
 
 // ✅ Middleware Wrapper
 const uploadMiddleware = (req, res, next) => {
-    upload.single('file')(req, res, function (err) {
-        if (err) {
-            // console.error('❌ Multer Error:', err)
-            return res.status(500).json({ success: false, message: 'File upload failed', details: err.message })
-        }
-        if (!req.file) {
-            // console.error('❌ No file received in request')
-            return res.status(400).json({ success: false, message: 'No file uploaded' })
-        }
+	upload.single('file')(req, res, function (err) {
+		if (err) {
+			// console.error('❌ Multer Error:', err)
+			return res
+				.status(500)
+				.json({
+					success: false,
+					message: 'File upload failed',
+					details: err.message,
+				})
+		}
+		if (!req.file) {
+			// console.error('❌ No file received in request')
+			return res
+				.status(400)
+				.json({ success: false, message: 'No file uploaded' })
+		}
 
-        // console.log('✅ File uploaded successfully:', req.file)
-        next()
-    })
+		// console.log('✅ File uploaded successfully:', req.file)
+		next()
+	})
 }
 
 module.exports = uploadMiddleware
