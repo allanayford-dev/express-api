@@ -9,7 +9,7 @@ const mongoose = require('mongoose')
 // User registration
 const register = async (req, res) => {
 	try {
-		const { name, email, password } = req.body
+		const { name, email, password: userPassword } = req.body
 		if (!name || !email || !password) {
 			return res.status(400).json({ message: 'Missing required fields' })
 		}
@@ -19,11 +19,11 @@ const register = async (req, res) => {
 			return res.status(400).json({ message: 'User already exists' })
 		}
 
-		const hashedPassword = await bcrypt.hash(password, 10)
+		const hashedPassword = await bcrypt.hash(userPassword, 10)
 		const newUser = new User({ name, email, password: hashedPassword })
 		const savedUser = await newUser.save()
 
-		const { password: _, ...userWithoutPassword } = savedUser.toObject()
+		const { password, ...userWithoutPassword } = savedUser.toObject()
 		res.status(201).json({
 			message: 'User registered successfully',
 			user: userWithoutPassword,
@@ -36,8 +36,8 @@ const register = async (req, res) => {
 // User login with cookies
 const login = async (req, res) => {
 	try {
-		const { email, password } = req.body
-		if (!email || !password) {
+		const { email, password: userPassword } = req.body
+		if (!email || !userPassword) {
 			return res.status(400).json({ message: 'Missing required fields' })
 		}
 
@@ -46,7 +46,7 @@ const login = async (req, res) => {
 			return res.status(400).json({ message: 'Invalid credentials' })
 		}
 
-		const isMatch = await bcrypt.compare(password, user.password)
+		const isMatch = await bcrypt.compare(userPassword, user.password)
 		if (!isMatch) {
 			return res.status(400).json({ message: 'Invalid credentials' })
 		}
@@ -75,7 +75,7 @@ const login = async (req, res) => {
 			maxAge: 604800000,
 		})
 		console.log('Set-Cookie Headers:', res.getHeaders()['set-cookie'])
-		const { password: _, ...userWithoutPassword } = user.toObject()
+		const { password, ...userWithoutPassword } = user.toObject()
 		res
 			.status(200)
 			.json({ message: 'Login successful', user: userWithoutPassword })
