@@ -1,18 +1,34 @@
 const cron = require('node-cron')
+const ALPHAVANTAGE = require('../classes/alpha-vantage')
+const stockOverview = require('../models/Stock/stock-overview')
+const { sample } = require('lodash')
 
 function startCron() {
 	console.log('⏳ Cron Jobs Initialized...')
 
-	// Example Cron Job: Runs every minute
-	cron.schedule('* * * * *', () => {
-		console.log(`✅ Cron Job Executed at: ${new Date().toISOString()}`)
-		// Call a function, API, or perform some task here
-	})
-
 	// Another Example: Runs every day at midnight
-	cron.schedule('0 0 * * *', () => {
-		console.log('🌙 Running a midnight cleanup task...')
-		// Example: Cleanup old database records
+	cron.schedule('0 * * * *', async () => {
+		const api = new ALPHAVANTAGE()
+		const symbol = sample(['IBM'])
+
+		console.log(`Running Stock Overview Update: ${symbol}`)
+
+		try {
+			const stockData = await api.GetOverview(symbol)
+			if (stockData && !stockData.Information) {
+				await stockOverview.findOneAndUpdate({ symbol }, stockData, {
+					upsert: true,
+					new: true,
+				})
+				console.log(`Updated stock overview for ${symbol}`)
+			} else {
+				console.error(
+					`Error: Invalid API Key or API Limit Reached. Message: ${stockData.Information}`
+				)
+			}
+		} catch (error) {
+			console.log(`Error updating stock overview for ${symbol}:`, error)
+		}
 	})
 
 	// Add more cron jobs as needed
