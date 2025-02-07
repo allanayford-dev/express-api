@@ -205,13 +205,26 @@ class AuthController {
 
 	async logout(req, res) {
 		try {
-			if (req.cookies?.refreshToken) {
-				await repos.RefreshToken.revokeRefreshToken(req.cookies.refreshToken)
+			const { refreshToken } = req.cookies
+
+			if (!refreshToken) {
+				return res.status(400).json({ message: 'No active session found.' })
 			}
+
+			const tokenRecord = await repos.RefreshToken.findOne({
+				token: refreshToken,
+			})
+			if (!tokenRecord) {
+				return res.status(400).json({ message: 'Invalid refresh token.' })
+			}
+
+			await repos.RefreshToken.deleteMany({ userId: tokenRecord.user })
 
 			res.clearCookie('token')
 			res.clearCookie('refreshToken')
-			res.status(200).json({ message: 'Logged out successfully.' })
+			res
+				.status(200)
+				.json({ message: 'Logged out successfully from all devices.' })
 		} catch (error) {
 			console.log('Error logging out: ', error.message)
 			res.status(500).json({
