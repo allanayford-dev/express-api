@@ -2,7 +2,10 @@ const bcrypt = require('bcryptjs')
 const mongoose = require('mongoose')
 const jwt = require('jsonwebtoken')
 const crypto = require('crypto')
-const sendVerificationEmail = require('../utils/emailService')
+const {
+	sendVerificationEmail,
+	sendPasswordResetEmail,
+} = require('../utils/emailService')
 
 const db = require('../models')
 const repos = require('../repository')
@@ -251,6 +254,57 @@ class AuthController {
 				.status(200)
 				.json({ message: 'Email verified successfully. You can now log in.' })
 		} catch (error) {
+			res.status(500).json({ message: 'Server error', error: error.message })
+		}
+	}
+
+	async forgotPassword(req, res) {
+		try {
+			const { email } = req.body
+
+			const user = await this.User.findOne({ email })
+			if (!user) {
+				return res.status(404).json({ message: 'User not found.' })
+			}
+
+			const resetToken = crypto.randomBytes(32).toString('hex')
+			user.resetToken = resetToken
+			user.resetTokenExpiry = Date.now() + 3600000
+			await user.save()
+
+			await sendPasswordResetEmail(email, resetToken)
+
+			res
+				.status(200)
+				.json({ message: 'Password reset email sent successfully.' })
+		} catch (error) {
+			console.error('Error requesting password reset:', error.message)
+			res.status(500).json({ message: 'Server error', error: error.message })
+		}
+	}
+
+	async resetPassword(req, res) {
+		try {
+			const { token, newPassword } = req.body
+
+			const user = await this.User.findOne({
+				resetToken: token,
+				resetTokenExpiry: { $gt: Date.now() },
+			})
+			if (!user) {
+				return res.status(400).json({ message: 'Invalid or expired token.' })
+			}
+
+			user.password = await bcrypt.hash(newPassword, 10)
+			user.resetToken = null
+			user.resetTokenExpiry = null
+			await user.save()
+
+			res
+				.status(200)
+				.json({ message: 'Password reset successfully. You can now log in.' })
+		} catch (error) {
+			console.error('Error resetting password:', error.message)
 			res.status(500).json({ message: 'Server error', error: error.message })
 		}
 	}

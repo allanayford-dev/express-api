@@ -4,7 +4,9 @@ const {
 	login,
 	refreshToken,
 	logout,
-	verifyEmail
+	verifyEmail,
+	forgotPassword,
+	resetPassword,
 } = require('../controllers/authController')
 
 const { authenticateUser } = require('../middleware/authMiddleware')
@@ -28,6 +30,10 @@ router.post('/refresh', refreshToken)
 
 // Route to logout
 router.post('/logout', logout)
+
+router.post('/forgot-password', forgotPassword)
+
+router.post('/reset-password', resetPassword)
 
 // Route to get user details
 router.get('/me', authenticateUser, verifyUser)

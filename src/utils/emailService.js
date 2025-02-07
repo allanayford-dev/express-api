@@ -22,4 +22,19 @@ async function sendVerificationEmail(email, token) {
 	await transporter.sendMail(mailOptions)
 }
 
-module.exports = sendVerificationEmail
+async function sendPasswordResetEmail(email, token) {
+	const resetUrl = `${process.env.FRONTEND_URL}/reset-password?token=${token}`
+
+	const mailOptions = {
+		from: process.env.EMAIL_USER,
+		to: email,
+		subject: 'Reset Your Password',
+		html: `<p>You requested a password reset. Click the link below to reset your password:</p>
+               <a href="${resetUrl}">Reset Password</a>
+               <p>If you didn't request this, ignore this email.</p>`,
+	}
+
+	await transporter.sendMail(mailOptions)
+}
+
+module.exports = { sendVerificationEmail, sendPasswordResetEmail }

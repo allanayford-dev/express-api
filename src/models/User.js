@@ -7,6 +7,8 @@ const userSchema = new mongoose.Schema({
 	isActive: { type: Boolean, default: true },
 	isVerified: { type: Boolean, default: false },
 	verificationToken: { type: String, default: null },
+	resetToken: { type: String, default: null },
+	resetTokenExpiry: { type: Date, default: null },
 	createdAt: { type: Date, default: Date.now },
 })
 
