@@ -10,7 +10,6 @@ const {
 const db = require('../models')
 const repos = require('../repository')
 const { ACCESS_TOKEN_SECRET, REFRESH_TOKEN_SECRET } = require('../config')
-const RefreshTokenRepository = require('../repository/RefreshTokenRepository')
 
 class AuthController {
 	constructor() {
@@ -234,6 +233,23 @@ class AuthController {
 				message: 'Server error',
 				error: error.message,
 			})
+		}
+	}
+
+	async verifyUser(req, res) {
+		try {
+			const user = await this.User.findById(req.user.userId).select(
+				'-password -resetToken -resetTokenExpiry'
+			)
+
+			if (!user) {
+				return res.status(404).json({ message: 'User not found' })
+			}
+
+			res.status(200).json({ message: 'User verified', user })
+		} catch (error) {
+			console.error('Error retrieving user:', error.message)
+			res.status(500).json({ message: 'Server error', error: error.message })
 		}
 	}
 

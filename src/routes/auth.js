@@ -7,10 +7,10 @@ const {
 	verifyEmail,
 	forgotPassword,
 	resetPassword,
+	verifyUser,
 } = require('../controllers/authController')
 
 const { authenticateUser } = require('../middleware/authMiddleware')
-const { verifyUser } = require('../controllers/userController')
 const {
 	validateRegistration,
 	validateLogin,
